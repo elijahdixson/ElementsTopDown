@@ -11,6 +11,7 @@ var _arrows_dist = point_distance(0,0,_arrows_h,_arrows_v);
 var _axis_h = gamepad_axis_value(0,gp_axislh);
 var _axis_v = gamepad_axis_value(0,gp_axislv);
 var _axis_dist = point_distance(0,0,_axis_h,_axis_v);
+var _axis_dir = point_direction(0,0,_axis_h,_axis_v)
 
 movement_percent = 0;
 input_h = 0;
@@ -55,3 +56,18 @@ if(position_meeting(mouse_x,mouse_y,id))
                     .25,
                     5);
 }
+
+
+
+
+
+
+
+if (gamepad_button_check_pressed(0,gp_face1)) 
+{
+	var inst = instance_create_layer(x,y,"Skills",obj_projectile);
+	inst.direction = _axis_dir;
+	inst.image_angle = _axis_dir - 90;
+	inst.speed = 3;
+}
+

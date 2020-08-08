@@ -8,3 +8,6 @@ event_user(ev_set_sprite);
 movement_and_collision(dpad_dir,
                        max_speed*movement_percent,
                        obj_wall_base);
+			   
+		   
+

@@ -63,9 +63,26 @@ if(position_meeting(mouse_x,mouse_y,id))
 
 
 
+if (gamepad_button_check_pressed(0,gp_face2)) 
+{
+	var inst = instance_create_layer(x,y,"Skills",obj_fireball);
+	inst.direction = _axis_dir;
+	inst.image_angle = _axis_dir - 90;
+	inst.speed = 3;
+}
+
+
+if (gamepad_button_check_pressed(0,gp_face3)) 
+{
+	var inst = instance_create_layer(x,y,"Skills",obj_waterbolt);
+	inst.direction = _axis_dir;
+	inst.image_angle = _axis_dir - 90;
+	inst.speed = 3;
+}
+
 if (gamepad_button_check_pressed(0,gp_face1)) 
 {
-	var inst = instance_create_layer(x,y,"Skills",obj_projectile);
+	var inst = instance_create_layer(x,y,"Skills",obj_rockball);
 	inst.direction = _axis_dir;
 	inst.image_angle = _axis_dir - 90;
 	inst.speed = 3;

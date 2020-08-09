@@ -21,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall_base","path":"objects/obj_wall_base/obj_wall_base.yy",},"parent":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall_base","path":"objects/obj_wall_base/obj_wall_base.yy",},"parent":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_projectile",
+  "name": "obj_fireball",
   "tags": [],
   "resourceType": "GMObject",
 }

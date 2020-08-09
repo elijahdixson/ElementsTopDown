@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_square",
-    "path": "sprites/spr_square/spr_square.yy",
+    "name": "spr_waterbolt_temp",
+    "path": "sprites/spr_waterbolt_temp/spr_waterbolt_temp.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_wall_base",
-    "path": "objects/obj_wall_base/obj_wall_base.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall_base","path":"objects/obj_wall_base/obj_wall_base.yy",},"parent":{"name":"obj_waterbolt","path":"objects/obj_waterbolt/obj_waterbolt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,12 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_test",
-  "tags": [
-    "burnable",
-    "wet",
-    "burning",
-    "dry",
-  ],
+  "name": "obj_waterbolt",
+  "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_rockball_temp",
-    "path": "sprites/spr_rockball_temp/spr_rockball_temp.yy",
+    "name": "spr_point_dir",
+    "path": "sprites/spr_point_dir/spr_point_dir.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall_base","path":"objects/obj_wall_base/obj_wall_base.yy",},"parent":{"name":"obj_rockball","path":"objects/obj_rockball/obj_rockball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Projectiles.yy",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_rockball",
+  "name": "obj_point_dir",
   "tags": [],
   "resourceType": "GMObject",
 }

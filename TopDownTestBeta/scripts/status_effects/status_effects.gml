@@ -18,8 +18,7 @@ function status_burning(_object) {
 /// @function status_wet(_object);
 /// @param {index} _object The Object to apply the effect to
 
-function status_wet(_object) 
-{
+function status_wet(_object) {
 	if asset_has_tags(_object,"burning",asset_object) {asset_remove_tags(_object,"burning",asset_object);}
 	if asset_has_tags(_object,"dry",asset_object) {asset_remove_tags(_object,"dry",asset_object);} 
 	
@@ -32,8 +31,7 @@ function status_wet(_object)
 /// @function status_dry(_object);
 /// @param {index} _object The Object to apply the effect to
 
-function status_dry(_object) 
-{
+function status_dry(_object) {
 	if asset_has_tags(_object,"wet",asset_object) {asset_remove_tags(_object,"wet",asset_object); image_blend = c_white;} 
 	
 	asset_add_tags(_object,"dry",asset_object)

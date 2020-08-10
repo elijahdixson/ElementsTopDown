@@ -1,3 +1,48 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+/// @function move_inputs(gamepad)
+/// @param {gamepad} gamepad_number
+function move_inputs(gamepad_number){
+
+	//Check analog stick
+	var _axis_h = gamepad_axis_value(gamepad_number,gp_axislh);
+	var _axis_v = gamepad_axis_value(gamepad_number,gp_axislv);
+	var _axis_dist = point_distance(gamepad_number,0,_axis_h,_axis_v);
+	var _axis_dir = point_direction(gamepad_number,0,_axis_h,_axis_v);
+
+	//Reset variables
+	movement_percent = 0;
+	input_h = 0;
+	input_v = 0;
+
+	//Deadzone and control mode
+	if(_axis_dist > analog_deadzone) {
+	  movement_percent = min(_axis_dist,1);
+	  control_mode = mode_analog;
+	  input_h = _axis_h;
+	  input_v = _axis_v;
+	}
+
+	//Movement
+	move_dir = point_distance(0,0,input_h,input_v) > 0 
+	           ? point_direction(0,0,input_h,input_v) 
+	           : no_direction;
+
+	event_user(ev_set_sprite);
+
+	movement_and_collision(move_dir,max_speed*movement_percent,obj_wall_base);
+
+
+	// Set Point direction
+	if(_axis_dist > analog_deadzone) {point_dir = _axis_dir;}
+
+	return point_dir;
+
+
+}
+	
+	
 ///@function movement_and_collision
 ///@arg direction
 ///@arg movespeed
@@ -76,4 +121,19 @@ function movement_and_collision() {
 	return true;
 
 
+}
+	
+	
+/// @function directional_pointer
+/// @param {object} object_instance_id - The pointer object for this character
+/// @parm {direction} p_direction - The player's direction
+/// @parm {x} p_x - The player's x location
+/// @parm {y} p_y - The player's y location
+function directional_pointer(object, p_dir, p_x, p_y) {
+
+	with (object) {
+		image_angle = p_dir + 90;	
+		x = p_x;
+		y = p_y;
+	}
 }

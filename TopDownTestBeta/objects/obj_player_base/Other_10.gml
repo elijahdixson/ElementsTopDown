@@ -1,5 +1,5 @@
 /// @description Update Sprite Index
-if(move_dir != no_direction)
+if(move_dir != no_direction) //happens after movement and collison function
 {
   image_speed = 1;
   xscale=1;
@@ -21,3 +21,5 @@ else
   image_speed = 0;
   image_index = 0; //or whatever frame has both feet on the ground.
 }
+
+//will likely need to replace or refacter for kylie's character creater

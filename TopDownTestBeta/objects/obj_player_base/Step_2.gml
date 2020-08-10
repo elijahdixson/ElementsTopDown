@@ -10,3 +10,5 @@ _x = lerp(_cur_x,_x,.2);
 _y = lerp(_cur_y,_y,.2);
 
 camera_set_view_pos(view_camera[0],_x,_y);
+
+//can probably replace this with a custom camera

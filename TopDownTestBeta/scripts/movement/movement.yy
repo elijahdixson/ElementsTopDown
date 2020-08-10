@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "General Helpers",
-    "path": "folders/Scripts/General Helpers.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "approach",
+  "name": "movement",
   "tags": [],
   "resourceType": "GMScript",
 }

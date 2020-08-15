@@ -129,9 +129,9 @@ function movement_and_collision() {
 /// @parm {direction} p_direction - The player's direction
 /// @parm {x} p_x - The player's x location
 /// @parm {y} p_y - The player's y location
-function directional_pointer(object, p_dir, p_x, p_y) {
+function directional_pointer(obj_id, p_dir, p_x, p_y) {
 
-	with (object) {
+	with (obj_id) {
 		image_angle = p_dir + 90;	
 		x = p_x;
 		y = p_y;

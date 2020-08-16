@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite29",
-    "path": "sprites/Sprite29/Sprite29.yy",
+    "name": "spr_camera_icon",
+    "path": "sprites/spr_camera_icon/spr_camera_icon.yy",
   },
   "solid": false,
   "visible": false,

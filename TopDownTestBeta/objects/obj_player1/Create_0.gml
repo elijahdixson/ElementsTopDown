@@ -3,6 +3,7 @@ mode = "BASIC";
 
 //Gamepad
 player_number = 0;
+player_id = id;
 
 //Pointer
 _obj_cam = instance_create_layer(x,y,"Player",obj_camera); 

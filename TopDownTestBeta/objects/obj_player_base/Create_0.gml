@@ -7,9 +7,14 @@ point_dir = 270;	//yes you need to keep this line-- determine very first point_d
 analog_deadzone = .70;
 movement_percent = 0;
 
-max_speed = 2.25;
+max_speed = 1.75;
 xscale = 1;
 input_h = 0;
 input_v = 0;
 
 cam_switch = false;
+
+hp = 100;
+hpmax = hp;
+
+rockblock_spawned = false;

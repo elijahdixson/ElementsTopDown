@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_wall_base",
-    "path": "objects/obj_wall_base/obj_wall_base.yy",
+    "name": "obj_moveableblock",
+    "path": "objects/obj_moveableblock/obj_moveableblock.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Blocks",
+    "path": "folders/Objects/Blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_rockblock",

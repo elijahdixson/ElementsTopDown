@@ -6,15 +6,17 @@
 /// @param {direction} direction The direction the projectile is shot
 /// @param {speed} speed The speed at which the projectile moves
 /// @param {hurts_player} boolen wether or not the projectile can hurt the player
+/// @param {player ID} player_id The player's instance ID
 // maybe also add number of projectiles, size, and spread
 
-function fireball(_dir,_speed,hurts_player) {
+function fireball(_dir,_speed,hurts_player,_player_id) {
 	
 	var inst = instance_create_layer(x,y,"Skills",obj_fireball);
 	inst.direction = _dir;
 	inst.image_angle = _dir - 90;
 	inst.speed = _speed;
 	if hurts_player = true {} //run player damage script
+	inst.spawned_by_player = _player_id;
 
 }
 
@@ -23,14 +25,16 @@ function fireball(_dir,_speed,hurts_player) {
 /// @param {direction} direction The direction the projectile is shot
 /// @param {speed} speed The speed at which the projectile moves
 /// @param {hurts_player} boolen wether or not the projectile can hurt the player
+/// @param {player ID} player_id The player's instance ID
 
-function waterbolt(_dir,_speed,hurts_player) {
+function waterbolt(_dir,_speed,hurts_player,_player_id) {
 	
 	var inst = instance_create_layer(x,y,"Skills",obj_waterbolt);
 	inst.direction = _dir;
 	inst.image_angle = _dir - 90;
 	inst.speed = _speed;
 	if hurts_player = true {} //run player damage script
+	inst.spawned_by_player = _player_id;
 
 }
 
@@ -57,14 +61,16 @@ function rockball(_dir,_speed,hurts_player,_player_id) {
 /// @param {direction} direction The direction the projectile is shot
 /// @param {speed} speed The speed at which the projectile moves
 /// @param {hurts_player} boolen wether or not the projectile can hurt the player
+/// @param {player ID} player_id The player's instance ID
 
-function airbolt(_dir,_speed,hurts_player) {
+function airbolt(_dir,_speed,hurts_player,_player_id) {
 	
 	var inst = instance_create_layer(x,y,"Skills",obj_airbolt);
 	inst.direction = _dir;
 	inst.image_angle = _dir - 90;
 	inst.speed = _speed;
 	if hurts_player = true {} //run player damage script
+	inst.spawned_by_player = _player_id;
 
 }
 	
